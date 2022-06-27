@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>bucin hehe</title>
+    <style type="text/css" media="all">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #aeae;
+        }
+        header * {
+            display: grid;
+            text-align: center;
+            text-shadow: 1px 1px 1px #FF007B,-1px -1px 1px #06f5ff;
+            margin-bottom: 20px;
+        }
+        .container {
+            position: relative;
+            display: grid;
+            margin: auto auto;
+            width: 340px;
+            min-height: 240px;
+            padding: 2px;
+            background-color: white;
+            box-shadow: 5px 5px 1px #FF007B,-5px -5px 1px #06f5ff,0px 10px 30px #000;
+            border-radius: 10px;
+
+        }
+        .segitiga {
+            width: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            margin-top: 2px;
+            justify-content: center;
+            border-left: 169px solid transparent;
+            border-right: 169px solid transparent;
+            border-top: 90px solid white;
+            filter: drop-shadow(1px 1px 1px black);
+            transition: 0.5s;
+        }
+        .segitiga:hover {
+            filter: drop-shadow(1px 1px 1px transparent);
+        }
+        .container h2 {
+            margin: 0px auto;
+            transform: translateY(120px);
+            z-index: 1;
+        }
+
+        .container h2 a {
+            text-decoration: none;
+            color: black;
+        }
+        .segitiga:hover {
+            width: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            justify-content: center;
+            border-left: 169px solid transparent;
+            border-right: 169px solid transparent;
+            border-top: 90px solid #eafdff;
+            opacity: 1;
+
+        }
+        /* .segitiga2{
+            position: absolute;
+            top: -90px;
+            border-left: 169px solid transparent;
+            border-right: 169px solid transparent;
+            border-bottom: 90px solid #eafdff;
+            opacity: 0;
+        }
+        .segitiga2:hover{
+            opacity: 1;
+        }*/
+        .segitiga h2 {;
+            margin-top: -200px;
+            opacity: 0;
+            margin-left: -50px;
+            transition: 0.5s;
+        }
+        .segitiga:hover h2 {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h5>surat dari:</h5>
+        <h1>VERDI</h1>
+    </header>
+    <div class="container">
+        <h2>Click Atas!</h2>
+
+        <div class="segitiga">
+            <h2>ILoveYou</h2>
+        </div>
+        <div class="segitiga2">
+
+        </div>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        
+        const nama = prompt("masukin nama dulu atuh neng")
+        alert("sebenernya aku mau ngomong " + nama)
+        const iyaAtauTidak = confirm("apakah kamu suka aku " + nama + "?")
+        if (iyaAtauTidak) {
+            alert ("i love you to " + nama)
+        } else {
+            alert ("ku menangisssss")
+        }
+        </script>
+
+    </body>
+</html>

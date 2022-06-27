@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>belajar posisi</title>
+    <style type="text/css" media="all">
+        * {
+            height: 2000px;
+        }
+        .container {
+            height: 210px;
+            width: 100%;
+            border: 2px solid black;
+            position: absolute;
+            top: 200px;
+        }
+        .satu {
+            height: 70px;
+            width: 70px;
+            background-color: salmon;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 0px auto;
+            z-index: 3;
+        }
+        .dua {
+            height: 70px;
+            width: 70px;
+            background-color: royalblue;
+            position: relative;
+            left: 30px;
+            margin: 0px auto;
+            z-index: 2;
+        }
+        .tiga {
+            height: 70px;
+            width: 70px;
+            background-color: lightgreen;
+            margin: 0px auto;
+            z-index: 1;
+        }
+        .navbar {
+            height: 40px;
+            width: 100%;
+            background-color: #666;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 5px;
+            z-index: 4;
+        }
+        .navbar li {
+            display: inline-block;
+            margin: 5px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: lightblue;
+        }
+        .navbar a:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="satu">
+
+        </div>
+        <div class="dua">
+
+        </div>
+        <div class="tiga">
+
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a>|</li>
+               <li><a href="#">contacts</a>|</li>
+                <li><a href="#">produk</a>|</li>
+                <li><a href="#">servis</a>|</li>
+                <li><a href="#">medsos</a>|</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

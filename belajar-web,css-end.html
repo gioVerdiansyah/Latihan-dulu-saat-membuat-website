@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>belajar web</title>
+    <style type="text/css" media="all">
+        body {
+            background-color: #eaeaea;
+            width: 960px;
+            height: 3000px;
+        }
+        .container {
+            width: 940px;
+            padding: 5px;
+            margin: auto;
+            background-color: white;
+            overflow: auto;
+            border: 5px double black;
+            position: relative;
+            top: 55px;
+        }
+        .ribbon {
+            position: absolute;
+            right: -30px;
+            top: -30px;
+        }
+        .ribbon img {
+            width: 100px;
+            height: 100px;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 50px;
+            background-color: lightskyblue;
+            border-bottom: 5px solid salmon;
+            z-index: 10;
+
+        }
+        .navbar ul li {
+            display: inline-block;
+            margin-left: 40px;
+            background-color: #666;
+            padding: 5px;
+            position: relative;
+            right: px;
+            border-radius: 6px;
+        }
+        .navbar a {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline blue 3px;
+            letter-spacing: 3px;
+        }
+        .navbar a:hover {
+            background-color: white;
+            color: black;
+            padding: 5px;
+        }
+        .header {
+            font-family: Georgia;
+
+        }
+        .header h2 {
+            font-size: 35px;
+            padding: 15px;
+            font-weight: bold;
+        }
+        .header ul li {
+            display: inline-block;
+            margin-left: 5px;
+            padding: 0;
+            position: relative;
+            right: 20px;
+            bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .header a {
+            text-decoration: underline black 2px;
+            color: salmon;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 1px;
+            
+        }
+        .header a:hover {
+            background-color: lightskyblue;
+            color: white;
+
+        }
+        .jpg {
+
+            border-top: 5px solid salmon;
+            border-bottom: 5px solid cyan;
+        }
+        .jpg img {
+            width: 940px;
+            height: 250px;
+            padding: 0px;
+
+        }
+        .main {
+            width: 600px;
+            margin-left: 5px;
+            border: 2px solid #000000;
+            padding: 10px;
+            box-sizing: border-box;
+            float: left;
+            margin-top: 10px;
+        }
+        .main h4 {
+            font-family: Georgia;
+        }
+        .main a {
+            text-decoration: none;
+            color: black;
+
+        }
+        .main isi {}
+        .pembungkus3 {
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+            border: 2px solid black;
+            float: right;
+            padding-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        .sidebar {}
+        .sidebar h4 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .zero {
+            background-color:;
+            width: 70px;
+            height: 70px;
+            float: left;
+            margin-right: 10px;
+        }
+        .zero img {
+            height: 70px;
+            width: 70px;
+            border: 2px dotted black;
+        }
+        .keterangan {}
+        .copyright {
+            width: 960px;
+            background-color: black;
+            color: white;
+            padding: 1px;
+            font-family: Courier;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">next</a></li>
+            <li><a href="#">info</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="ribbon">
+            <a href="https://m.youtube.com/channel/UCEzS2adRl6pInUD-FvhNwhw">
+                <img src="ribbon1.png" alt="ribbonYT" />
+            </a>
+
+        </div>
+        <div class="header">
+            <h2 class="web">First Website</h2>
+            <ul>
+                <li><a href="#">home</a>|</li>
+                <li><a href="belajar-button.html">next</a>|</li>
+                <li><a href="belajar-css.html">follow</a>|</li>
+            </ul>
+        </div>
+        <div class="jpg">
+            <img src="hero.jpg" alt="hero" />
+
+        </div>
+        <div class="main">
+            <h4>judul artikel: <b>Nikola Tesla</b></h4>
+            <p>
+                di tulis oleh <a href="#"><i><u><a href="https://www.google.com/search?q=nikola+tesla&sxsrf=AOaemvI8TGcftVS43pM3HGR-QRhAuJGsrg%3A1639143209629&source=hp&ei=KVezYcKzI4LihwOp7ZjgAg&gs_ssp=eJzj4tDP1TcwTTGsNGD04snLzM7PSVQoSS3OSQQAVcYHjw&oq=nikola&gs_lcp=ChFtb2JpbGUtZ3dzLXdpei1ocBABGAAyCAguEIAEELEDMgoILhDHARDRAxBDMgQILhBDMgQIABBDMggIABCABBCxAzIHCAAQQxCLAzILCAAQgAQQsQMQiwMyEAguEEMQiwMQqAMQmgMQmwM6BwgjEOoCECc6BAgjECc6CAguELEDEIMBOggIABCxAxCDAToICC4QgAQQiwM6FwguEIAEELEDEMcBENEDEIsDEKgDENIDOgoILhDHARCjAhBDOgsIABCABBCxAxCDAToNCC4QsQMQxwEQowIQQzoLCC4QgAQQsQMQgwE6CwguEIAEELEDEIsDOhQILhCABBCxAxCLAxCoAxCYAxCaAzoHCC4QsQMQQzoHCAAQsQMQQzoFCAAQgAQ6Cwg">google<a /></u></i></a>
+                </p>
+                <p>
+                    <b>ISI:</b>
+                </p>
+                <p class="isi"></p>
+                <p>
+                    Nikola Tesla adalah seorang penemu, fisikawan, teknisi mekanika, dan teknisi listrik Serbia-Amerika. Ia terkenal berkat kontribusinya dalam mendesain sistem kelistrikan arus bolak-balik. Lahir dan dibesarkan di Kekaisaran Austria, Tesla menyelesaikan pendidikannya dalam bidang teknik dan fisika tahun 1870-an.<a href="https://id.m.wikipedia.org/wiki/Nikola_Tesla"> <u>Wikipedia.Nikola Tesla</u></a>
+                    <p>
+                        <b>Kelahiran:</b> 10 Juli 1856, Smiljan, Kroasia
+                    </p>
+                    <p>
+                        <b>Meninggal:</b> 7 Januari 1943, The New Yorker Hotel, Kota New York, New York, Amerika
+                    </p>
+                    <p>
+                        <b>Kebangsaan:</b> Amerika, Austria-Hongaria, Kekaisaran Austria, Serbia
+                    </p>
+                    <p>
+                        <b>Orang tua:</b> Milutin Tesla, Đuka Tesla
+                    </p>
+                    <p>
+                        <b>Saudara kandung:</b> Dane Tesla, Milka Tesla, Angelina Tesla, Marica Kosanović
+                    </p>
+                </div>
+                <div class="pembungkus3">
+                    <div class="sidebar">
+                        <h4>tentang penulis:</h4>
+                    </div>
+                    <div class="zero">
+                        <img src="img.jpg" alt="Nikola_Tesla" />
+                    </div>
+                    <div class="keterangan">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae turpis tempor nulla dapibus pulvinar. Aliquam porttitor volutpat dolor nec condimentum. Ut a volutpat justo. Sed vitae lectus scelerisque risus aliquet vulputate quis vel ligula. Phasellus commodo lacus urna, a lacinia ex feugiat ac. Phasellus eu pulvinar purus. Nulla vel iaculis nulla, quis faucibus metus. Donec a nisl at turpis malesuada aliquam. Nam non gravida nisi, vel vehicula tortor. Nulla auctor massa posuere ipsum gravida rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <center><h4>copyright ©VERDI-12-12-2021</h4></center>
+                </div>
+            </div>
+        </body>
+    </html>
